@@ -464,6 +464,73 @@
         -webkit-animation-iteration-count: 1;
         animation-iteration-count: 1;
       }
+
+      #snackbar {
+        visibility: hidden;
+        min-width: 250px;
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        border-radius: 2px;
+        padding: 16px;
+        position: fixed;
+        z-index: 1;
+        left: auto;
+        bottom: 20px;
+        font-size: 17px;
+        
+      }
+
+      #snackbar.show {
+        visibility: visible;
+        -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+        animation: fadein 0.5s, fadeout 0.5s 2.5s;
+      }
+
+      @-webkit-keyframes fadein {
+        from {
+          bottom: 0;
+          opacity: 0;
+        }
+        to {
+          bottom: 20px;
+          opacity: 1;
+        }
+      }
+
+      @keyframes fadein {
+        from {
+          bottom: 0;
+          opacity: 0;
+        }
+        to {
+          bottom: 20px;
+          opacity: 1;
+        }
+      }
+
+      @-webkit-keyframes fadeout {
+        from {
+          bottom: 20px;
+          opacity: 1;
+        }
+        to {
+          bottom: 0;
+          opacity: 0;
+        }
+      }
+
+      @keyframes fadeout {
+        from {
+          bottom: 20px;
+          opacity: 1;
+        }
+        to {
+          bottom: 0;
+          opacity: 0;
+        }
+      }
+
       .fa {
         padding: 9px;
         font-size: 30px;
@@ -562,7 +629,7 @@
       <h1 title="header">Contact us</h1>
 
       <div class="container">
-        <form action="/action_page.php">
+        <form onsubmit="return false">
           <label for="fname">First Name</label>
           <input
             type="text"
@@ -587,10 +654,23 @@
             style="height: 200px"
           ></textarea>
 
-          <input type="submit" value="Submit" />
+          <input type="submit" value="Submit" onclick="showAlert()" />
+
+          <div id="snackbar">Your form has been submitted successfully!</div>
         </form>
       </div>
     </div>
+
+    <script>
+      function showAlert() {
+        var x = document.getElementById("snackbar");
+        x.className = "show";
+        setTimeout(function () {
+          x.className = x.className.replace("show", "");
+        }, 3000);
+      }
+    </script>
+
     <div class="contact" id="footer">
       <link
         rel="stylesheet"
