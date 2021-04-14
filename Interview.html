@@ -1,0 +1,543 @@
+<!doctype html>
+<html>
+<head>
+	<meta name="viewport"
+	content="width=device-width, initial scale=1.0"> 
+<meta charset="utf-8">
+<title>The Interview</title>
+<style type="text/css">
+	
+	body{
+		background-color: #F5F5F5;
+	}
+	
+		#outside-box{
+		height: 100%;
+		padding-top: 10px;
+	}
+	
+	.italic{
+		font-family: "archivo";
+		font-style: italic;
+	}
+	
+	.bold{
+		font-family:"archivo";
+	}
+	
+	ul li{
+		display: inline-block;
+		list-style-type: none;
+		text-align: center;
+	}
+	
+	body {
+    margin: 0;
+    padding: 0;
+}
+
+div maincontainer {
+    margin: 0 auto;
+    width: ___px;
+    text-align: center;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    margin-left: auto;
+    margin-right: auto;
+}
+	
+	.nav a:link {	
+		font-family: archivo;
+		margin: auto;
+		color:#333333;
+		text-decoration: none;	
+		padding-right: 10px;
+		padding-left: 25px;
+		padding-top: 20px;
+		text-align: center;
+	}
+	.nav a:visited {	
+		font-family: archivo;
+		color: #333333;
+		text-decoration: none;
+		padding-right: 10px;
+		padding-left: 25px;
+		padding-top: 20px;
+		text-align: center;
+	}
+	.nav a:hover{
+		font-family: archivo;
+		color: #333333;
+		text-decoration: none;
+		padding-right: 10px;
+		padding-top: 20px;
+		text-align: center
+	}
+	
+	
+	h1{
+		color: #333333;
+		font-family: archivo;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	
+	img{
+		max-width: 100%;
+		padding-top: 2%;
+		padding-bottom: 2%;
+		display: block;
+	}
+	
+	.paak1{
+		padding-top: 0px;
+	}
+	
+	p{
+		color: #333333;
+		font-family: "archivo";
+		font-size: 100%;
+		padding-left: 20px;
+		padding-right: 20px;
+		margin-left: auto;
+		margin-right: auto;
+		align-items: center;
+		justify-content: center;
+		max-width: 500px;
+	}
+	
+/*====================*/
+/* BUZZ OUT EFFECT
+/*====================*/
+
+@-webkit-keyframes buzz-out-on-hover {
+  10% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  20% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+  30% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  40% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+  50% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+  60% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  70% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+  80% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  90% {
+    -webkit-transform: translateX(1px) rotate(0);
+    transform: translateX(1px) rotate(0);
+  }
+  100% {
+    -webkit-transform: translateX(-1px) rotate(0);
+    transform: translateX(-1px) rotate(0);
+  }
+}
+@keyframes buzz-out-on-hover {
+  10% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  20% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+  30% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  40% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+  50% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+  60% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  70% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+  80% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  90% {
+    -webkit-transform: translateX(1px) rotate(0);
+    transform: translateX(1px) rotate(0);
+  }
+  100% {
+    -webkit-transform: translateX(-1px) rotate(0);
+    transform: translateX(-1px) rotate(0);
+  }
+}
+.buzz-out-on-hover {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.buzz-out-on-hover:hover, .buzz-out-on-hover:focus, .buzz-out-on-hover:active {
+  -webkit-animation-name: buzz-out-on-hover;
+  animation-name: buzz-out-on-hover;
+  -webkit-animation-duration: 0.75s;
+  animation-duration: 0.75s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+	
+
+@-webkit-keyframes buzz-out-on-hover2 {
+  10% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  20% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+  30% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  40% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+  50% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+  60% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  70% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+  80% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  90% {
+    -webkit-transform: translateX(1px) rotate(0);
+    transform: translateX(1px) rotate(0);
+  }
+  100% {
+    -webkit-transform: translateX(-1px) rotate(0);
+    transform: translateX(-1px) rotate(0);
+  }
+}
+@keyframes buzz-out-on-hover2 {
+  10% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  20% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+  30% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  40% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+  50% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+  60% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  70% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+  80% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  90% {
+    -webkit-transform: translateX(1px) rotate(0);
+    transform: translateX(1px) rotate(0);
+  }
+  100% {
+    -webkit-transform: translateX(-1px) rotate(0);
+    transform: translateX(-1px) rotate(0);
+  }
+}
+.buzz-out-on-hover2 {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.buzz-out-on-hover2:hover, .buzz-out-on-hover2:focus, .buzz-out-on-hover2:active {
+  -webkit-animation-name: buzz-out-on-hover2;
+  animation-name: buzz-out-on-hover2;
+  -webkit-animation-duration: 0.75s;
+  animation-duration: 0.75s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+	
+
+@-webkit-keyframes buzz-out-on-hover3 {
+  10% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  20% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+  30% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  40% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+  50% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+  60% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  70% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+  80% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  90% {
+    -webkit-transform: translateX(1px) rotate(0);
+    transform: translateX(1px) rotate(0);
+  }
+  100% {
+    -webkit-transform: translateX(-1px) rotate(0);
+    transform: translateX(-1px) rotate(0);
+  }
+}
+@keyframes buzz-out-on-hover3 {
+  10% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  20% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+  30% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  40% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+  50% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+  60% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  70% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+  80% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  90% {
+    -webkit-transform: translateX(1px) rotate(0);
+    transform: translateX(1px) rotate(0);
+  }
+  100% {
+    -webkit-transform: translateX(-1px) rotate(0);
+    transform: translateX(-1px) rotate(0);
+  }
+}
+.buzz-out-on-hover3 {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.buzz-out-on-hover3:hover, .buzz-out-on-hover3:focus, .buzz-out-on-hover3:active {
+  -webkit-animation-name: buzz-out-on-hover3;
+  animation-name: buzz-out-on-hover3;
+  -webkit-animation-duration: 0.75s;
+  animation-duration: 0.75s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+	
+</style>
+	
+</head>
+	
+<body>
+	
+	
+	<div class="nav">
+		<ul>
+		<li><a href="Interview.html" class="buzz-out-on-hover">The Interview</a></li>
+		
+		<li><a href="index.html" class="buzz-out-on-hover3">Home</a></li>
+		</ul>
+		
+	</div>
+	
+	<div id="outside-box">
+		<img src="Images/Flaunt_Anderson_Paak-5.jpg" alt="paak1" class="paak1">
+		
+		<h1 title="intro">Let's meet a musician who overcame troubles in his childhood to become what one reviewer called, quote, "a rapping, singing, drumming polymath." Here's Anderson .Paak.</h1>
+		<p>&nbsp;</p>
+		<p>There is no doubt now that Anderson .Paak is a rising star in hip-hop. But he had a lot of reasons to doubt whether he would ever get here. As for Oxnard, where his journey began...</p>
+		
+		<p><span class="italic">It's a sleepy town, beautiful beaches. It's pretty low-key, man. I was bored growing up there, pretty much, you know.</span></p>
+		
+		<p><span class="bold">Bored.</span></p>
+		
+		<p><span class="italic">Yeah, yeah. There's not much to do out there. But it was cool for me because I grew up playing in church there.</span></p>
+		
+		<p><span class="bold">You say it was boring, but you actually have - I've read about - had really some tough moments growing up, I mean...</span></p>
+		
+		<p><span class="italic">Yes.</span></p>
+		
+		<p><span class="bold">There was domestic violence in your family that you actually had to watch?</span></p>
+		
+		<p><span class="italic">Yeah. My mom is just, like, such a mild-mannered person and, like, really sweet lady. And for some reason she just always got with, like, the most, like, craziest dudes. My pops was one of them. He was, like, a cool dude, but he just got strung out on those drugs, you know? And then once the drugs got the most of him, it was just downhill. My mom was coming home from work, and we hear, like, screaming outside. We run outside, and my mom is just, like, in the street, like, blood everywhere. And my pops is on top of her. He's like, get back in the house. I got a gun. Get back in the house.</span></p>
+		
+		<p><span class="bold">Oh, my God.</span></p>
+		
+		<p><span class="italic"> And so then we, like, run in the house, call the cops. And that was the last time I saw him. The cops got him, and then he did 14 years after that. My moms came out the hospital and was just like, yeah, we're moving out of Oxnard.</span></p>
+		
+		<img src="Images/Paak 6.jpg" alt="paak1">
+		
+	  	<p>(SOUNDBITE OF SONG, "BROTHER'S KEEPER")</p>
+		
+		<p><span class="italic">(Singing) I'm running through changes. Is it strange to be baited? I'm grown.</span></p>
+		
+		<p><span class="bold"> I know your mom had this business, and then she went to prison for some tax stuff. And so you're alone. I mean, how alone were you at that point</span></p>
+		
+		<p><span class="italic"> I mean, there were times it was lonely. But, man, honestly, my family was intact. Like, when all this stuff was happening - like, my mom went to prison - I was in my senior year of high school. Our house got foreclosed. And then my sisters, they had to move back in with us and take care of me and my little sister. So they were coming, like, holding us down.We didn't know all these crazy things were happening. We didn't know the DA had a case against my mom. I didn't even know my mom was bankrupt, none of that stuff, you know? All this stuff was happening. And then I remember, like, going to school, and the principal bringing me in the office, and he's like, dude, you know your parents on the front paper, you know, coming out of court - and all this stuff.</span></p>
+		
+		<p><span class="bold">Like, how did you get through that? Were you still thinking at 17, 18 that you could have a music career?</span></p>
+		
+		<p><span class="italic">So right before this happened, I thought I was about to get signed. Like, I was making my own beats. I was DJ'ing and everything. I put the music to the back. And I stopped playing drums at the church, and I was like, forget it.</span></p>
+		
+		<p><span class="bold">Wow. So was music - I mean, were you even thinking that you could get back to music?</span></p>
+		
+		<p><span class="italic"> I had completely put it aside. I had - when that happened with my parents, I sold my gear. I sold my turntables, everything.</span></p>
+		
+		<p><span class="bold">And then what was the turning point? When did you turn back to...</span></p>
+		
+		<p><span class="italic">Well, I started working. I got a spot. And then I started back playing drums in church.</span></p>
+		
+		<p><span class="bold">You went back to your roots.</span></p>
+		
+		<p><span class="italic">Yeah, yeah. Then I started writing again.</span></p>
+		
+		<p><span class="bold">Where did you find that confidence? I mean, I could see just sort of giving up music altogether and just saying, it's never going to happen. Like, what kept that little fire still in there?</span></p>
+		
+		<p><span class="italic">Women.</span></p>
+		
+		<p><span class="bold">Women? (Laughter).</span></p>
+		
+		<p><span class="italic">(Laughter) Nah. It was crazy. I started playing back in church, and then there was a girl in there that came back from college. And she was like, oh, wow, you're, like, kind of hot now. And then we start talking. And then I was, like, playing her some of my music. She was like, yo, you can sing. You're good. Why don't you, like, do this stuff? And I was like, nah. And then I was like, all right, you know, she said I sound sexy. So I'm going to just, like, keep doing it.</span></p>
+		
+		<p><span class="bold">That was - I love your honesty about the turning point.</span></p>
+		
+		<p><span class="italic">Yeah (laughter)</span></p>
+		
+		<p><span class="italic">It just kind of kept going from there. And I started getting hyped. And I was like, wait, man, this is dope. And I started doing it every day. And then that's when the girl was like, it's either music or me. You're getting too hyped on this. Like...</span></p>
+		
+		<p><span class="bold">Oh, she was the one who told you to do music, and now it's like, not this much.</span></p>
+		
+		<p><span class="italic">(Laughter) Yeah. It was dope when it was like - I had more time with her. But then I was, like, so obsessed, like, every day, like, yeah, I'm about to write. And she was just like, it's either music or me. And I was like, damn, all right. We were supposed to get married, everything. I had, like, the ring and all this stuff.</span></p>
+		
+		<p><span class="bold">Oh wow.</span></p>
+		
+		<p><span class="italic">So I was like, all right. I don't want to do this no more. And then she was like, what?</span></p>
+		
+		<p><span class="bold">So you gave up the relationship to pursue music?</span></p>
+		
+		<p><span class="italic">Yeah.</span></p>
+		
+		<p><span class="italic">I was in such a, like, happy state because I really found, like, purpose again. You know, I was, like, back in, like - and I was finding my confidence, like, in my own music.</span></p>
+		
+		<img src="Images/Paak 8.jpg" alt="paak1">
+		
+		<p><span class="bold">Do you feel like you've made it somehow? I mean, I just think about the rocky journey and the giving up music and your parents and the uncertainty. Like, is this album, in a way, a moment for you, like, that you've come through? And you don't have to worry about - like, you talk about stability. Like, have you reached a point where you don't have to worry about instability anymore?</span></p>
+		
+		<p><span class="italic">I mean, dude, I could eat sushi, like, every day if I wanted to. And, like, I don't have to worry about certain things. Got you a bottle of champagne, you know. It's dope not having to worry about, like, my phone bill and stuff. But it's always something, like, next-level. And I'm always around people that are on that next level. And I want to aspire to do that. But this definitely feels like a welcome home. Like, dang, man. I'm proud of what we did and all these different people we've met. I've gotten to see the world. I've gotten to share all these experiences with people in my hometown and the world and introduce my hometown to the world. It feels great. This is what we dreamed of.</span></p>
+		
+		<p><span class="bold">Anderson, thank you. It's really - it's really nice talking to you.</span></p>
+		
+		<p><span class="italic">Thank you. We never got to drink that cham-peezy.</span></p>
+		
+		<p><span class="bold"> I think we have glasses. Yeah, let's do it.</span></p>
+		
+		<p><span class="italic">All right, man.</span></p>
+		
+		<p>That was Anderson .Paak in our studios here in LA. His new album is called "Oxnard."</p>
+		
+		<img src="Images/Paak 7.jpg" alt="paak1">
+
+</div>
+	
+</body>
+</html>

@@ -1,0 +1,465 @@
+<!doctype html>
+<html>
+<head>
+	<meta name="viewport"
+	content="width=device-width, initial scale=1.0"> 
+<meta charset="utf-8">
+<title>Contact</title>
+	<style type="text/css">
+		body{
+		background-color: #F5F5F5;
+	}
+	
+		#outside-box{
+		height: 100%;
+		padding-top: 10px;
+		margin-left: 445px;
+		margin-right: auto;
+		align-items: center;
+		justify-content: center;
+	}
+		
+	ul li{
+		display: inline-block;
+		list-style-type: none;
+		text-align: center;
+}
+		
+			
+	body {
+    margin: 0;
+    padding: 0;
+}
+
+div maincontainer {
+    margin: 0 auto;
+    width: ___px;
+    text-align: center;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    margin-left: auto;
+    margin-right: auto;
+}
+	
+	
+	.nav a:link {	
+		font-family: archivo;
+		margin: auto;
+		color:#333333;
+		text-decoration: none;	
+		padding-right: 10px;
+		padding-left: 25px;
+		padding-top: 20px;
+		text-align: center;
+	}
+	.nav a:visited {	
+		font-family: archivo;
+		color: #333333;
+		text-decoration: none;
+		padding-right: 10px;
+		padding-left: 25px;
+		padding-top: 20px;
+		text-align: center;
+	}
+	.nav a:hover{
+		font-family: archivo;
+		color: #333333;
+		text-decoration: none;
+		padding-right: 10px;
+		padding-top: 20px;
+		text-align: center
+	}
+		
+		h1{
+		color: #333333;
+		font-family: archivo;
+		margin-left: auto;
+		margin-right: auto;
+		align-items: center;
+		justify-content: center;
+		max-width: 150px;
+	}
+		
+		.contact{
+		padding-left: 20px;
+		padding-right: 20px;
+		margin-left: auto;
+		margin-right: auto;
+		align-items: center;
+		justify-content: center;
+ 
+		}
+		
+		.facebook{
+			width: 10%;
+			height: 10%;
+			padding-right: 2%;
+		}
+		
+		.instagram{
+			width: 9%;
+			height: 10%;
+			padding-right: 2%;
+		}
+		
+		.twitter{
+			width: 8%;
+			height: 8%;
+			padding-bottom: 8px;
+			padding-right: 2%
+		}
+		
+		.youtube{
+			width: 8%;
+			height: 8%;
+			padding-bottom: 10px;
+		}
+		
+		
+/*====================*/
+/* BUZZ OUT EFFECT
+/*====================*/
+
+@-webkit-keyframes buzz-out-on-hover {
+  10% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  20% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+  30% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  40% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+  50% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+  60% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  70% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+  80% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  90% {
+    -webkit-transform: translateX(1px) rotate(0);
+    transform: translateX(1px) rotate(0);
+  }
+  100% {
+    -webkit-transform: translateX(-1px) rotate(0);
+    transform: translateX(-1px) rotate(0);
+  }
+}
+@keyframes buzz-out-on-hover {
+  10% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  20% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+  30% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  40% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+  50% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+  60% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  70% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+  80% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  90% {
+    -webkit-transform: translateX(1px) rotate(0);
+    transform: translateX(1px) rotate(0);
+  }
+  100% {
+    -webkit-transform: translateX(-1px) rotate(0);
+    transform: translateX(-1px) rotate(0);
+  }
+}
+.buzz-out-on-hover {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.buzz-out-on-hover:hover, .buzz-out-on-hover:focus, .buzz-out-on-hover:active {
+  -webkit-animation-name: buzz-out-on-hover;
+  animation-name: buzz-out-on-hover;
+  -webkit-animation-duration: 0.75s;
+  animation-duration: 0.75s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+	
+
+@-webkit-keyframes buzz-out-on-hover2 {
+  10% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  20% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+  30% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  40% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+  50% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+  60% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  70% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+  80% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  90% {
+    -webkit-transform: translateX(1px) rotate(0);
+    transform: translateX(1px) rotate(0);
+  }
+  100% {
+    -webkit-transform: translateX(-1px) rotate(0);
+    transform: translateX(-1px) rotate(0);
+  }
+}
+@keyframes buzz-out-on-hover2 {
+  10% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  20% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+  30% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  40% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+  50% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+  60% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  70% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+  80% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  90% {
+    -webkit-transform: translateX(1px) rotate(0);
+    transform: translateX(1px) rotate(0);
+  }
+  100% {
+    -webkit-transform: translateX(-1px) rotate(0);
+    transform: translateX(-1px) rotate(0);
+  }
+}
+.buzz-out-on-hover2 {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.buzz-out-on-hover2:hover, .buzz-out-on-hover2:focus, .buzz-out-on-hover2:active {
+  -webkit-animation-name: buzz-out-on-hover2;
+  animation-name: buzz-out-on-hover2;
+  -webkit-animation-duration: 0.75s;
+  animation-duration: 0.75s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+	
+
+@-webkit-keyframes buzz-out-on-hover3 {
+  10% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  20% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+  30% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  40% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+  50% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+  60% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  70% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+  80% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  90% {
+    -webkit-transform: translateX(1px) rotate(0);
+    transform: translateX(1px) rotate(0);
+  }
+  100% {
+    -webkit-transform: translateX(-1px) rotate(0);
+    transform: translateX(-1px) rotate(0);
+  }
+}
+@keyframes buzz-out-on-hover3 {
+  10% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  20% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+  30% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  40% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+  50% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+  60% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  70% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+  80% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  90% {
+    -webkit-transform: translateX(1px) rotate(0);
+    transform: translateX(1px) rotate(0);
+  }
+  100% {
+    -webkit-transform: translateX(-1px) rotate(0);
+    transform: translateX(-1px) rotate(0);
+  }
+}
+.buzz-out-on-hover3 {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.buzz-out-on-hover3:hover, .buzz-out-on-hover3:focus, .buzz-out-on-hover3:active {
+  -webkit-animation-name: buzz-out-on-hover3;
+  animation-name: buzz-out-on-hover3;
+  -webkit-animation-duration: 0.75s;
+  animation-duration: 0.75s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+	
+		
+	</style>
+</head>
+	
+
+<body>
+	
+	<div class="nav">
+		<ul>
+		<li><a href="Interview.html" class="buzz-out-on-hover">The Interview</a></li>
+		<li><a href="Contacts.html" class="buzz-out-on-hover2">Contact</a></li>
+		<li><a href="index.html" class="buzz-out-on-hover3">Home</a></li>
+		</ul>
+	</div>
+	<h1 title="header">Contact us</h1>
+	<div id="outside-box">
+		<div class="contact">
+		<img src="Images/facebook.png" alt="facebook" class="facebook">
+		<img src="Images/instagram.png" alt="instagram" class="instagram">
+		<img src="Images/twitter.png" alt="twitter" class="twitter">
+		<img src="Images/youtube.png" alt="youtube" class="youtube">
+	</div>
+	
+	</div>
+	
+	
+	
+</body>
+</html>
